@@ -24,9 +24,12 @@ print ("You just typed: " + numberStr)
 
 numberInt = int(numberStr)
 
-if numberInt > 6:
-  print("You just typed a number greater than 6")
-elif numberInt < 6:
-  print("You just typed a number that is less than 6")
+# Declare a value to be used in the comparison
+b = 6 # b is a number not a string
+
+if numberInt > b:
+  print("You just typed a number greater than " + str(b) )
+elif numberInt < b:
+  print("You just typed a number that is less than " + str(b))
 else:
-  print("You just typed 6!!!")
+  print("You just typed " + str(b) + "!!!")
